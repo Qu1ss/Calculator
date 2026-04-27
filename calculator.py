@@ -23,7 +23,7 @@ def divide(a, b):
 
 
 if __name__ == "__main__":
-    print("Калькулятор v1.1 - с логированием")
+    print("=== Калькулятор === Версия 2.0 ===")
     print(f"2 + 3 = {add(2, 3)}")
     print(f"10 - 4 = {subtract(10, 4)}")
     print(f"3 * 5 = {multiply(3, 5)}")

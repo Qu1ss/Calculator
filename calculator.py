@@ -22,12 +22,26 @@ def divide(a, b):
         raise ValueError("Деление на ноль невозможно")
     return a / b
 
-def power(a, b):
-    """Возведение в степень."""
+def power(a: float, b: float) -> float:
+    """Возведение в степень.
+
+    Args:
+        a (float): основание
+        b (float): показатель степени
+    Returns:
+        float: результат возведения в степень
+    """
     return a ** b
 
-def square_root(a):
-    """Квадратный корень."""
+
+def square_root(a: float) -> float:
+    """Квадратный корень.
+
+    Args:
+        a (float): число, из которого извлекается корень
+    Returns:
+        float: квадратный корень числа
+    """
     if a < 0:
         raise ValueError("Нельзя извлечь корень из отрицательного числа")
     return math.sqrt(a)

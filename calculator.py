@@ -1,4 +1,5 @@
 # calculator.py
+import math
 
 def add(a, b):
     """Сложение двух чисел."""
@@ -24,6 +25,12 @@ def divide(a, b):
 def power(a, b):
     """Возведение в степень."""
     return a ** b
+
+def square_root(a):
+    """Квадратный корень."""
+    if a < 0:
+        raise ValueError("Нельзя извлечь корень из отрицательного числа")
+    return math.sqrt(a)
 
 if __name__ == "__main__":
     print("Калькулятор")
